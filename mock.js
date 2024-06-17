@@ -8,6 +8,7 @@ if (typeof lightdm == 'undefined') {
 	lightdm.default_layout= lightdm.layouts[0];
 	lightdm.layout= lightdm.layouts[0];
 	lightdm.sessions= [
+					{ name: "BSPWM WM", key: "bspwm" },
 					{ name: "LXQt Desktop", key: "lxqt" },
 					{ name: "KDE Plasma Desktop", key: "kdeplasma" },
 					]
