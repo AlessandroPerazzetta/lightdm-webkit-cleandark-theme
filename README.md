@@ -21,9 +21,11 @@ You need to make the webkit greeter the default greeter. This is done by editing
 and changing the greeter-session value to lightdm-webkit2-greeter. lightdm.conf should have:
 
 <pre>
-[SeatDefaults]
+[Seat:*]
 greeter-session=lightdm-webkit2-greeter
+user-session=bspwm
 allow-guest=false
+session-wrapper=/etc/lightdm/Xsession
 </pre>
 
 The second step is to clone repository:
@@ -41,7 +43,7 @@ and install the actual theme. This is done by copying the files of this reposito
 Finally, change the /etc/lightdm/lightdm-webkit2-greeter.conf file to contain the following line:
 
 <pre>
-webkit-theme=cleandark
+webkit_theme=cleandark
 </pre>
 
 Now you can reboot and enjoy the new theme.
