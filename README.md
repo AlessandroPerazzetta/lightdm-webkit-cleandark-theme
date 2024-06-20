@@ -6,6 +6,18 @@ This is a LightDM webkit greeter theme. Based on [LightDM Webkit Arch Theme](htt
 Installation Instructions
 -------------------------
 
+## Automatic installation with script:
+
+Run script to automatically install lightdm-webkit2-greeter, cleandark theme and update settings.
+
+<pre>
+git clone https://github.com/AlessandroPerazzetta/lightdm-webkit-cleandark-theme.git
+cd lightdm-webkit-cleandark-theme
+sudo bash install.sh
+</pre>
+
+## Manual installation:
+
 You will need lightdm as your login manager and the lightdm-webkit2-greeter from AUR.
 
 <pre>
