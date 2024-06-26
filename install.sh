@@ -14,7 +14,8 @@ echo "Check greeter-session, user-session values are fine ..."
 echo "\n"
 cp /etc/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf.ORI
 echo "Lightdm webkit2 config file saved to /etc/lightdm/lightdm-webkit2-greeter.conf.ORI"
-sed -i 's/\(webkit_theme=\)\(.*\)/\1cleandark/' /etc/lightdm/lightdm-webkit2-greeter.conf
+#sed -i 's/\(webkit_theme=\)\(.*\)/\1cleandark/' /etc/lightdm/lightdm-webkit2-greeter.conf
+sed -i 's/\(webkit_theme        = \)\(.*\)/\1cleandark/' /etc/lightdm/lightdm-webkit2-greeter.conf
 echo "Lightdm webkit2 config file /etc/lightdm/lightdm-webkit2-greeter.conf updated"
 echo "Check webkit_theme value is fine ..."
 
